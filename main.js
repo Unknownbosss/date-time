@@ -1,3 +1,6 @@
+const rangeInput = document.getElementById("range");
+rangeInput.addEventListener("change", updateDateTime);
+
 function updateDateTime() {
   const weeks = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
   const months = [
@@ -24,7 +27,7 @@ function updateDateTime() {
   ).textContent = `${weeks[day]}, ${date} ${months[month]} ${year}`;
 
   // we will get this range from user
-  const hourRange = 12;
+  const hourRange = rangeInput.value;
   let hour = now.getHours() % hourRange;
   if (hourRange === 12) {
     if (now.getHours() === 12 || now.getHours() === 24) {
