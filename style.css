@@ -1,12 +1,40 @@
 body {
-  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f0f0;
+  margin: 20px;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  min-height: 100vh;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#date,
+#time {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#date {
+  color: #008000;
+}
+
+#time {
+  color: #0065bd;
 }
